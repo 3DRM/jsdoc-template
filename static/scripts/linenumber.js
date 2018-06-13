@@ -1,7 +1,7 @@
 'use strict';
 
 /* global document */
-(function () {
+var attachAnchors = function () {
   var lineId, lines, totalLines, anchorHash;
   var source = document.getElementsByClassName('prettyprint source linenums');
   var i = 0;
@@ -17,16 +17,23 @@
       lineId = 'line' + lineNumber;
       lines[i].id = lineId;
       lines[i].classList.add('linenums');
-      lines[i].dataset.href = window.location.href.split('#')[0] + "#" + lineId
+      lines[i].dataset.href = "#" + lineId
       if (lineId === anchorHash) {
         lines[i].className += ' selected';
+        location.href = "#" + lineid;
       }
     }
   }
-})();
 
-jQuery(document).ready(function($) {
-    $(".linenums").click(function() {
-        window.location = $(this).data("href");
+  $(".linenums").click(function() {
+    window.location.href = $(this).data("href");
+  });
+}
+
+$(document).ready(function() {
+    $('code.hljs').each(function(i, block) {
+        hljs.lineNumbersBlock(block);
     });
+
+    setTimeout(attachAnchors, 1000)
 });
