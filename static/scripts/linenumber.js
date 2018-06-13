@@ -26,7 +26,7 @@ var attachAnchors = function () {
   }
 
   $(".linenums").click(function() {
-    window.location.href = $(this).data("href");
+    location.href = $(this).data("href");
   });
 }
 
@@ -35,5 +35,5 @@ $(document).ready(function() {
         hljs.lineNumbersBlock(block);
     });
 
-    setTimeout(attachAnchors, 200)
+    setTimeout(attachAnchors, 100)
 });

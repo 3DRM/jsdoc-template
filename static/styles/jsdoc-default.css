@@ -518,7 +518,7 @@ footer {
     font-size: 100%;
     line-height: 18px;
     display: block;
-    margin: 0 10px;
+    margin-right: 10px;
     background-color: #23241f;
     color: #fff;
 }
@@ -944,6 +944,20 @@ input.search-input:focus {
 
 .hljs-strong {
     font-weight: bold
+}
+
+.hljs-ln td {
+    border-top: none;
+    border-right: 1px solid #4a4a4a;
+}
+
+.hljs-ln-code {
+    padding: 0px 10px !important;
+}
+
+.hljs-ln-numbers {
+    text-align: center;
+    padding-right: 3px !important;
 }
 
 .link-icon {
