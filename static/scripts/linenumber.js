@@ -35,5 +35,5 @@ $(document).ready(function() {
         hljs.lineNumbersBlock(block);
     });
 
-    setTimeout(attachAnchors, 1000)
+    setTimeout(attachAnchors, 200)
 });
