@@ -617,6 +617,9 @@ footer {
 
 dl.param-type {
     margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px 15px;
 }
 
 .param-type dt, .param-type dd {
@@ -625,6 +628,7 @@ dl.param-type {
 
 .param-type dd {
     font-family: Consolas, Monaco, 'Andale Mono', monospace
+    margin: 0px 5px;
 }
 
 .disabled {
