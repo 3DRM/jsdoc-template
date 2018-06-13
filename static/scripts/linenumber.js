@@ -20,7 +20,7 @@ var attachAnchors = function () {
       lines[i].dataset.href = "#" + lineId
       if (lineId === anchorHash) {
         lines[i].className += ' selected';
-        location.href = "#" + lineid;
+        location.href = "#" + lineId;
       }
     }
   }
