@@ -627,7 +627,7 @@ dl.param-type {
 }
 
 .param-type dd {
-    font-family: Consolas, Monaco, 'Andale Mono', monospace
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
     margin: 0px 5px;
 }
 
