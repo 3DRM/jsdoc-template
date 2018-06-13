@@ -126,3 +126,15 @@
     <?js= this.partial('examples.tmpl', examples) ?>
   </div>
 <?js } ?>
+
+<?js if (data.returns && returns.length) { ?>
+<h5>Returns:</h5>
+<?js if (returns.length > 1) { ?><ul><?js
+    returns.forEach(function(r) { ?>
+        <li><?js= self.partial('returns.tmpl', r) ?></li>
+    <?js });
+?></ul><?js } else {
+    returns.forEach(function(r) { ?>
+        <?js= self.partial('returns.tmpl', r) ?>
+    <?js });
+} } ?>
