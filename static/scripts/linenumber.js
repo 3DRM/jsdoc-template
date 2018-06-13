@@ -18,16 +18,15 @@ var attachAnchors = function () {
       lines[i].id = lineId;
       lines[i].classList.add('linenums');
       lines[i].dataset.href = "#" + lineId
+      lines[i].onclick = function(e){
+        location.href = e.target.dataset.href;
+      }
       if (lineId === anchorHash) {
         lines[i].className += ' selected';
         location.href = "#" + lineId;
       }
     }
   }
-
-  $(".linenums").click(function() {
-    location.href = $(this).data("href");
-  });
 }
 
 $(document).ready(function() {
