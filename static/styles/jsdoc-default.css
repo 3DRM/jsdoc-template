@@ -953,6 +953,7 @@ input.search-input:focus {
 
 .hljs-ln-code {
     padding: 0px 10px !important;
+    border-right: none !important;
 }
 
 .hljs-ln-numbers {
