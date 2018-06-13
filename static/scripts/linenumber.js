@@ -16,11 +16,6 @@ var attachAnchors = function () {
       lineNumber++;
       lineId = 'line' + lineNumber;
       lines[i].id = lineId;
-      lines[i].classList.add('linenums');
-      lines[i].dataset.href = "#" + lineId
-      lines[i].onclick = function(e){
-        location.href = e.target.dataset.href;
-      }
       if (lineId === anchorHash) {
         lines[i].className += ' selected';
         location.href = "#" + lineId;
