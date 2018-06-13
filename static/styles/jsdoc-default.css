@@ -157,6 +157,10 @@ h4 {
 }
 
 h4.name {
+    width: 100%;
+    padding: 15px 30px;
+    background-color: lavender;
+    color: cornflowerblue;
     font-size: 20px;
     margin-top: 0;
     font-weight: 500;
@@ -231,7 +235,7 @@ section {
 
 .signature-attributes {
     font-size: 60%;
-    color: #aaa;
+    color: crimson;
     font-style: italic;
     font-weight: lighter;
 }
@@ -425,12 +429,16 @@ footer {
 }
 
 .type-signature {
-    color: #aaa;
+    color: blueviolet;
 }
 
 .name, .signature {
     font-family: 'bt_mono', monospace;
     word-wrap: break-word;
+}
+
+.signature {
+    color: blueviolet;
 }
 
 .details {
@@ -499,7 +507,7 @@ footer {
     border: 1px solid #ddd;
     border-radius: 3px;
     overflow: auto;
-    background-color: #fbfbfb;
+    background-color: #23241f;
 }
 
 .prettyprint.source {
@@ -510,13 +518,13 @@ footer {
     font-size: 100%;
     line-height: 18px;
     display: block;
-    margin: 0 30px;
-    background-color: #fbfbfb;
-    color: #4D4E53;
+    margin: 0 10px;
+    background-color: #23241f;
+    color: #fff;
 }
 
 .prettyprint>code {
-    padding: 30px 15px;
+    padding: 10px 5px;
 }
 
 .prettyprint .linenums code {
